@@ -16,6 +16,10 @@
     --cor-principal: #eeeeee;
 }
 
+html {
+    font-size: 70%;
+}
+
 body {
     background-color: var(--cor-bg);
     color: var(--cor-texto);
@@ -50,3 +54,18 @@ body {
 .nome span {
     text-shadow: 0 0 25px var(--cor-principal);
 }
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--cor-texto);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: var(--cor-principal);
+    border-bottom: 3px solid var(--cor-principal);
+}
+
