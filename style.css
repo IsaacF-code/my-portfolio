@@ -10,10 +10,10 @@
 }
 
 :root {
-    --cor-bg: #080808;
-    --cor-segundo-bg: #181818;
-    --cor-texto: white;
-    --cor-principal: #eeeeee;
+    --bg-color: #080808;
+    --second-bg-color: #181818;
+    --text-color: white;
+    --main-color: #eeeeee;
 }
 
 html {
@@ -21,8 +21,8 @@ html {
 }
 
 body {
-    background-color: var(--cor-bg);
-    color: var(--cor-texto);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .header {
@@ -39,25 +39,25 @@ body {
     z-index: 5;
 }
 
-.nome {
+.name {
     font-size: 3rem;
-    color: var(--cor-texto);
+    color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-.nome:hover {
+.name:hover {
     transform: scale(1.1);
 }
 
-.nome span {
-    text-shadow: 0 0 25px var(--cor-principal);
+.name span {
+    text-shadow: 0 0 25px var(--main-color);
 }
 
 .navbar a {
     font-size: 1.8rem;
-    color: var(--cor-texto);
+    color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -65,8 +65,8 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--cor-principal);
-    border-bottom: 3px solid var(--cor-principal);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 section {
@@ -74,14 +74,14 @@ section {
     padding: 10rem 12% 10rem;
 }
 
-.sobre-mim {
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15rem;
 }
 
-.sobre-conteudo {
+.home-content {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -90,64 +90,64 @@ section {
     margin-top: 3rem;
 }
 
-.sobre-conteudo h1 {
+.home-content h1 {
     font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
-.sobre-conteudo h3 {
+.home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3.5rem
 }
 
-.sobre-conteudo p {
+.home-content p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
 }
 
-.icones-sociais a {
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4.5rem;
     height: 4.5rem;
     background: transparent;
-    border: 2px solid var(--cor-principal);
+    border: 2px solid var(--main-color);
     font-size: 2.5rem;
     border-radius: 50%;
-    color: var(--cor-principal);
+    color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
 
-.icones-sociais a:hover {
-    color: var(--cor-principal);
+.social-icons a:hover {
+    color: var(--main-color);
     transform: scale(1.3)translateY(-5px);
-    box-shadow: 0 0 25px var(--cor-principal);
+    box-shadow: 0 0 25px var(--main-color);
     /* background-color: ?; Adicionar cor*/ 
 }
 
-.sobre-mim-img {
+.home-img {
     border-radius: 50%;
 }
 
-.sobre-mim-img img {
+.home-img img {
     position: relative;
     top: 3rem;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--cor-principal);
+    box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
-.sobre-mim-img img:hover {
-    box-shadow: 0 0 25px var(--cor-principal),
-                0 0 50px var(--cor-principal),
-                0 0 100px var(--cor-principal);
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
 }
