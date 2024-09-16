@@ -194,3 +194,12 @@ section {
     transform: scale(1.1);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.skills {
+    background-color: var(--second-bg-color);
+}
+
+.box-content img {
+    width: 70px;
+    height: 70px;
+}
