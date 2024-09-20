@@ -233,6 +233,35 @@ section {
     background-color: var(--second-bg-color);
 }
 
+.about-content {
+    display: flex;
+    gap: 5rem;
+}
+
+.about-text h3 {
+    margin-top: 3rem;
+    font-size: 2.5rem
+}
+
+.about-text p{
+    font-size: 1.5rem;
+    line-height: 1.5; 
+    font-weight: 500;
+}
+
+.about-text p:nth-child(2), .about-text p:nth-child(3) {
+    margin-top: 2rem;
+}
+
+.about-img {
+    border-radius: 2rem;
+}
+
+.about-img img{
+    width: 25vw;
+    border-radius: 2rem;
+}
+
 /* Skills and Hobbies */
 .hobbies {
     background-color: var(--second-bg-color);
