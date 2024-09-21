@@ -252,9 +252,9 @@ section {
     margin-top: 2rem;
 }
 
-/* .about-text p:nth-child(1), .about-text p:nth-child(2) {
-    margin-top: 2rem;
-} */
+.about-text p:nth-child(3) {
+    font-size: 1.35rem;
+}
 
 .about-title {
     width: 80%;
