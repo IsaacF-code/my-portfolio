@@ -322,3 +322,27 @@ section {
     width: 70px;
     height: 70px;
 }
+
+/* Contact */
+.contact {
+    background-color: var(--second-bg-color);
+}
+
+.form-contact {
+    display: flex;
+    gap: 5rem;
+}
+
+.input-group, .input-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+input {
+    border-radius: 2rem;
+    padding: 2rem
+    
+}
+
