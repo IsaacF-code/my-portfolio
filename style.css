@@ -346,35 +346,30 @@ section {
     flex-direction: column;
 }
 
-.input-content input {
+.input-content input, .input-group-2 textarea {
     border-radius: 2rem;
     padding: 2rem;
     background-color: var(--bg-color);
     border: 2px solid var(--main-color);
+    resize: none;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 1.6rem
 }
 
 .input-content span {
-    margin-left: 1.6rem;
+    margin-left: 2.2rem;
     position: absolute;
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     color: var(--text-color);
-    font-size: 1.4rem;
-}
-
-.input-group-2 textarea {
-    border-radius: 2rem;
-    /* padding: 10rem 2rem; */
-    /* margin-top: 2rem; */
-    resize: none;
-    width: 100%;
-    
+    font-size: 1.6rem;
 }
 
 .input-group-2 span {
     position: absolute;
-    margin-top: 3.5rem;
-    color: black;
-    font-size: 1.4rem;
-    margin-left: 1.4rem;
+    margin-top: 2.2rem;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    margin-left: 2.2rem;
 }
 
