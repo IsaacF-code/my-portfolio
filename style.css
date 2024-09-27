@@ -14,6 +14,8 @@
     --second-bg-color: #181818;
     --text-color: white;
     --main-color: #63b5b5;
+    --placeholder: #6e6e6e;
+    --second-text-color: black;
 }
 
 html {
@@ -365,24 +367,25 @@ section {
     margin-left: 2.2rem;
     position: absolute;
     margin-top: 2.2rem;
-    color: var(--text-color);
+    color: var(--placeholder);
     font-size: 1.6rem;
 }
 
 .input-group-2 span {
     position: absolute;
     margin-top: 2.2rem;
-    color: var(--text-color);
-    font-size: 1.6rem;
+    color: var(--placeholder);
+    font-size: 1.7rem;
     margin-left: 2.2rem;
 }
 
 .btn {
-    width: 30%;
-    height: 10%;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 1rem 2.8rem;
     border-radius: 2rem;
     background-color: var(--main-color);
-    color: black;
+    color: var(--second-text-color);
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
