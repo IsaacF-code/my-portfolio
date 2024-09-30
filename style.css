@@ -419,3 +419,9 @@ footer {
     text-align: center;
     font-size: 2rem;
 }
+
+@media(max-width: 2560px) {
+    html {
+        font-size: 80%
+    }
+}
