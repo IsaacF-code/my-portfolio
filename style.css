@@ -430,10 +430,31 @@ footer {
     html {
         font-size: 75%;
     }
+
+    .home {
+        padding-bottom: 0rem;
+        margin-top: 1rem;
+    }
+
+    .scroll-down {
+        margin-top: 7rem;
+        width: 52px;
+        height: 80px;
+    }
 }
 
 @media(max-width: 1366px) {
     html {
         font-size: 55%;
+    }
+
+    .home {
+        padding-bottom: 0;
+    }
+
+    .scroll-down {
+        margin-top: 0;
+        width: 45px;
+        height: 70px;
     }
 }
