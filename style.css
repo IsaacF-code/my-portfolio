@@ -504,6 +504,14 @@ footer {
     .home-img img {
         width: 46vw;
     }
+    
+    .scroll-down {
+        display: none;
+    }
+
+    .heading {
+        font-size: 6.5rem;
+    }
 
     .about-content {
         flex-direction: column;
@@ -515,7 +523,9 @@ footer {
         width: 46vw;
     }
 
-    .scroll-down {
-        display: none;
+    .form-contact {
+        flex-direction: column;
+        gap: 2rem;
     }
+
 }
