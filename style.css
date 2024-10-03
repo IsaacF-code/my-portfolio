@@ -481,7 +481,11 @@ footer {
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        /* display: none; */
+        display: none;
+    }
+
+    .active {
+        display: block;
     }
 
     .navbar a {
