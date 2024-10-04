@@ -144,7 +144,15 @@ section {
     max-width: 1000px;
 }
 
-.social-icons a {
+.social-icons {
+    display: flex;
+}
+
+.social-content {
+    position: relative;
+}
+
+.social-content a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -159,11 +167,42 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.social-icons a:hover {
+.social-content a:hover {
     color: var(--text-color);
-    transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
+}
+
+.social-content span {
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--second-text-color);
+    text-align: center;
+    padding: 1rem 0.3rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: -10%;
+    top: 80%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.social-content span::after {
+    content: '';
+    border-style: solid;
+    border-width: 0.7rem;
+    border-color: transparent transparent transparent var(--text-color);
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 95%;
+    right: 40%;
+}
+
+.social-content:hover span {
+    opacity: 1;
+    visibility: visible;
 }
 
 .home-img {
@@ -437,6 +476,7 @@ footer {
         font-size: 75%;
     }
 
+    /* Home */
     .home {
         padding-bottom: 0rem;
         margin-top: 1rem;
@@ -454,6 +494,7 @@ footer {
         font-size: 55%;
     }
 
+    /* Home */
     .home {
         padding-bottom: 0;
     }
@@ -463,9 +504,14 @@ footer {
         width: 45px;
         height: 70px;
     }
+
+    .form-contact {
+        margin-top: -1rem;
+    }
 }
 
 @media(max-width: 895px) {
+    /* Navbar */
     #menu-icon {
         display: block;
     }
@@ -495,6 +541,7 @@ footer {
         color: var(--text-color);
     }
 
+    /* Home */
     .home .home-l {
         flex-direction: column-reverse;
         /* margin: 5rem 4rem; */
@@ -517,6 +564,7 @@ footer {
         font-size: 6.5rem;
     }
 
+    /* Skills and Hobbies */
     .box-content {
         width: 14rem;
         height: 12rem;
@@ -532,6 +580,7 @@ footer {
         width: 46vw;
     }
 
+    /* Contact */
     .form-contact {
         flex-direction: column;
         gap: 2rem;
