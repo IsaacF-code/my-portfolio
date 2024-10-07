@@ -177,6 +177,8 @@ section {
 
 .social-content span {
     width: 100%;
+    font-size: 1.05rem;
+    font-weight: 600;
     background-color: var(--text-color);
     color: var(--second-text-color);
     text-align: center;
