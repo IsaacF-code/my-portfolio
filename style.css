@@ -426,15 +426,15 @@ section {
     transition: .4s ease-in-out;
 }
 
-.input-content span {
+.input-content .field-title {
     margin-left: 2.2rem;
     position: absolute;
     margin-top: 2.2rem;
     color: var(--placeholder);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
-.input-group-2 span {
+.input-group-2 .field-title {
     position: absolute;
     margin-top: 2.2rem;
     color: var(--placeholder);
@@ -458,7 +458,10 @@ section {
 }
 
 .input-content > input:focus + .field-title, .input-group-2 > textarea:focus + .field-title {
-    top: -10%;
+    margin-top: -2rem;
+    text-shadow: 0 0 25px var(--main-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
     transition: .3s ease-in-out;
 }
 
@@ -607,6 +610,10 @@ footer {
     .form-contact {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .input-group-2 .field-title {
+        margin-left: 1rem;
     }
 
 }
