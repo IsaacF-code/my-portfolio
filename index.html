@@ -191,24 +191,28 @@
             <form action="" class="form-contact">
                 <div class="input-group">
                     <div class="input-content">
-                        <input type="text" placeholder="Digite seu nome">
+                        <input type="text" name="name" placeholder="Digite seu nome">
                         <span class="field-title">Nome</span>
                     </div>
                     <div class="input-content">
-                        <input type="email" placeholder="Digite seu e-mail">
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
                         <span class="field-title">E-mail</span>
                     </div>
                     <div class="input-content">
-                        <input type="number" placeholder="Digite seu número">
+                        <input type="tel" 
+                               name="cellphone" 
+                               maxlength="15" 
+                               onkeyup="handlePhone(event)" 
+                               placeholder="Digite seu número">
                         <span class="field-title">Celular</span>
                     </div>
                     <div class="input-content">
-                        <input type="text" placeholder="Digite o assunto">
+                        <input type="text" name="subject" placeholder="Digite o assunto">
                         <span class="field-title">Assunto</span>
                     </div>
                 </div>
                 <div class="input-group-2">
-                    <textarea name="" id="" placeholder="Sua mensagem" cols="30" rows="13"></textarea>
+                    <textarea name="message" id="" placeholder="Sua mensagem" cols="30" rows="11"></textarea>
                     <span class="field-title">Sua mensagem</span>
                     <button class="btn" type="submit">Enviar mensagem</button>
                 </div>
