@@ -188,33 +188,35 @@
 
         <section class="contact" id="contact">
             <h2 class="heading">Fale comigo</h2>
-            <form action="" class="form-contact">
+            <form action="" method="POST" class="form-contact">
                 <div class="input-group">
                     <div class="input-content">
-                        <input type="text" name="name" placeholder="Digite seu nome">
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                         <span class="field-title">Nome</span>
                     </div>
                     <div class="input-content">
-                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                         <span class="field-title">E-mail</span>
                     </div>
                     <div class="input-content">
                         <input type="tel" 
+                               id="tel"
                                name="cellphone" 
                                maxlength="15" 
                                onkeyup="handlePhone(event)" 
-                               placeholder="Digite seu número">
+                               placeholder="Digite seu número"
+                               required>
                         <span class="field-title">Celular</span>
                     </div>
                     <div class="input-content">
-                        <input type="text" name="subject" placeholder="Digite o assunto">
+                        <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
                         <span class="field-title">Assunto</span>
                     </div>
                 </div>
                 <div class="input-group-2">
-                    <textarea name="message" id="" placeholder="Sua mensagem" cols="30" rows="11"></textarea>
+                    <textarea name="message" id="message" placeholder="Sua mensagem" cols="30" rows="11" required></textarea>
                     <span class="field-title">Sua mensagem</span>
-                    <button class="btn" type="submit">Enviar mensagem</button>
+                    <button class="btn" type="submit" onclick="handleSubmit()">Enviar mensagem</button>
                 </div>
             </form>
         </section>

@@ -19,3 +19,33 @@ const phoneMask = (value) => {
     value = value.replace(/(\d)(\d{4})$/, "$1-$2");
     return value;
 }
+
+// Submit Form
+const handleSubmit = () => {
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var tel = document.getElementById("tel");
+    var subject = document.getElementById("subject");
+    var message = document.getElementById("message");
+
+    // if (name.value == "") {
+    //     alert("Nome não informado!");
+    //     name.focus();
+    // }
+    // if (email.value == "") {
+    //     alert("E-mail não informado!");
+    //     email.focus;
+    // }
+    // if (tel.value == "") {
+    //     alert("Celular não informado!");
+    //     tel.focus;
+    // }
+    // if (subject.value == "") {
+    //     alert("Assunto não informado!");
+    //     subject.focus;
+    // }
+    // if (message.value == "") {
+    //     alert("Mensagem não informada!");
+    //     message.focus;
+    // }
+}
