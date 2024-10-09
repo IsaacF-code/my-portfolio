@@ -188,15 +188,15 @@
 
         <section class="contact" id="contact">
             <h2 class="heading">Fale comigo</h2>
-            <form action="" method="POST" class="form-contact">
+            <form action="" id="form-contact" method="POST" class="form-contact">
                 <div class="input-group">
                     <div class="input-content">
                         <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-                        <span class="field-title">Nome</span>
+                        <span class="field-title">Nome*</span>
                     </div>
                     <div class="input-content">
                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                        <span class="field-title">E-mail</span>
+                        <span class="field-title">E-mail*</span>
                     </div>
                     <div class="input-content">
                         <input type="tel" 
@@ -210,15 +210,19 @@
                     </div>
                     <div class="input-content">
                         <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
-                        <span class="field-title">Assunto</span>
+                        <span class="field-title">Assunto*</span>
                     </div>
                 </div>
                 <div class="input-group-2">
                     <textarea name="message" id="message" placeholder="Sua mensagem" cols="30" rows="11" required></textarea>
-                    <span class="field-title">Sua mensagem</span>
-                    <button class="btn" type="submit" onclick="handleSubmit()">Enviar mensagem</button>
+                    <span class="field-title">Sua mensagem*</span>
+                    <button class="btn" type="submit" onclick="handleSubmit(event)">Enviar mensagem</button>
                 </div>
             </form>
+            <div class="field-span">
+                <legend>(*) Obrigatório</legend>
+                <span id="messageErro" style="color:red; font-size: 2rem;"></span>
+            </div>
         </section>
     </main>
 

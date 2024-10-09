@@ -21,31 +21,45 @@ const phoneMask = (value) => {
 }
 
 // Submit Form
-const handleSubmit = () => {
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var tel = document.getElementById("tel");
-    var subject = document.getElementById("subject");
-    var message = document.getElementById("message");
+let form_contact = document.getElementById("form-contact");
+let messageErro = document.getElementById("messageErro");
 
-    // if (name.value == "") {
-    //     alert("Nome não informado!");
-    //     name.focus();
-    // }
-    // if (email.value == "") {
-    //     alert("E-mail não informado!");
-    //     email.focus;
-    // }
-    // if (tel.value == "") {
-    //     alert("Celular não informado!");
-    //     tel.focus;
-    // }
-    // if (subject.value == "") {
-    //     alert("Assunto não informado!");
-    //     subject.focus;
-    // }
-    // if (message.value == "") {
-    //     alert("Mensagem não informada!");
-    //     message.focus;
-    // }
+const handleSubmit = (event) => {
+    event.preventDefault();
+    
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var tel = document.getElementById("tel").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    messageErro.textContent = "";
+
+    if (name == "") {
+       messageErro.textContent = "O campo nome é obrigatório!";
+       return
+    }
+    if (email == "") {
+        messageErro.textContent = "O campo e-mail é obrigatório!"
+        return
+    } else if (!validEmail(email)) {
+        messageErro.textContent = "Informe um e-mail válido!"
+        return
+    }
+    if (subject == "") {
+        messageErro.textContent = "O campo Assunto é obrigatório!";
+        return
+    }
+    if (message == "") {
+        messageErro.textContent = "O campo Sua mensagem é obrigatório!";
+        return
+    }
+
+    messageErro.style.color = "green";
+    messageErro.textContent = "Enviado com sucesso!";
+}
+
+const validEmail = (email) => {
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regexEmail.test(email)
 }
