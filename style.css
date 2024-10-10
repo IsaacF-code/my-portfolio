@@ -486,6 +486,17 @@ section {
                 0 0 50px var(--main-color);
 }
 
+.field-span {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+}
+
+.messageErro {
+    color: red;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
 footer {
     position: relative;
     bottom: 0;
