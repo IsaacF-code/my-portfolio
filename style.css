@@ -15,7 +15,7 @@
     --bg-color: #080808;
     --second-bg-color: #181818;
     --text-color: white;
-    --main-color: #63b5b5;
+    --main-color: #228896;
     --placeholder: #6e6e6e;
     --second-text-color: black;
 }
@@ -221,12 +221,22 @@ section {
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    animation: floating 2s ease-in-out infinite alternate;
 }
 
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
+}
+
+@keyframes floating {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
 }
 
 /* Scroll Down  */
@@ -594,6 +604,14 @@ footer {
 
     .home-img img {
         width: 46vw;
+        margin-top: 3rem;
+        box-shadow: 0 0 25px var(--main-color),
+                    0 0 50px var(--main-color);
+    }
+
+    .home-img img:hover {
+        box-shadow: 0 0 25px var(--main-color),
+                    0 0 50px var(--main-color);
     }
     
     .scroll-down {
