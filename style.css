@@ -402,6 +402,43 @@ section {
 /* Contact */
 .contact {
     background-color: var(--second-bg-color);
+    min-height: 0;
+}
+
+.box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box-contact p {
+    font-size: 1.8rem
+}
+
+.box-contact a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.3s ease-out;
+}
+
+.box-contact a:hover {
+    transform: scale(1.1);
+}
+
+.box-contact .social-icons {
+    margin-top: 0;
+    gap: 1.2rem
+}
+
+.box-contact .social-icons .social-content {
+    transition: 0.3s ease-in-out;
+}
+
+.box-contact .social-icons .social-content:hover {
+    transform: scale(1.2);
 }
 
 .btn {
