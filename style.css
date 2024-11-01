@@ -399,6 +399,67 @@ section {
     height: 70px;
 }
 
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content {
+    display: flex;
+    gap: 2rem
+}
+
+.action-project {
+    width: 50%;
+}
+
+.text-project h3 {
+    font-size: 3.5rem;
+}
+
+.text-project p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-info .buttons {
+    display: flex;
+    gap: 1.5rem
+}
+
+.project-button {
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    color: var(--second-text-color);
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-button:last-child {
+    color: var(--main-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 0;
+}
+
+.project-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.project-button:last-child:hover {
+    background-color: var(--main-color);
+    color: var(--second-text-color);
+}
+
 /* Contact */
 .contact {
     background-color: var(--second-bg-color);
@@ -413,8 +474,9 @@ section {
     gap: 2rem;
 }
 
-.box-contact p {
-    font-size: 1.8rem
+.text-contact p {
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .box-contact a {
@@ -426,6 +488,10 @@ section {
 
 .box-contact a:hover {
     transform: scale(1.1);
+}
+
+.box-contact .email-contact i {
+    margin-left: 0.8rem;
 }
 
 .box-contact .social-icons {
@@ -546,13 +612,8 @@ footer {
     /* Home */
     .home .home-l {
         flex-direction: column-reverse;
-        /* margin: 5rem 4rem; */
         gap: 4rem;
     }
-
-    /* .home-content h1{
-        font-size: 8rem;
-    } */
 
     .home-img img {
         width: 46vw;
@@ -571,7 +632,13 @@ footer {
     }
 
     .heading {
-        font-size: 6.5rem;
+        font-size: 5.8rem;
+    }
+
+    /* About */
+
+    .about-text h3, p {
+        text-align: center;
     }
 
     /* Skills and Hobbies */
@@ -590,4 +657,22 @@ footer {
         width: 46vw;
     }
 
+    /* Projects */
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-project {
+        width: 100%;
+    }
+
+    .project-info {
+        text-align: center;
+      
+    }
+
+    .project-info .buttons {
+        justify-content: center;
+    }
 }
