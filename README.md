@@ -16,5 +16,5 @@
 O projeto está em sua forma base e que pode ser melhorada em futuras atualizações. Atualmente, precisa melhorar:
 
 - [ ] Adicionar modo light.
-- [ ] Reformular alguns designs
+- [ ] Reformular alguns designs.
 - [ ] Adicionar mudança de idioma
